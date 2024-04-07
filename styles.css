@@ -208,7 +208,16 @@ nav a:hover{
   }
   
   #contMainInstrucc{
-    background-color: #FD8A32;
-    width: 95%;
+    background-color: #EBAD78;
     margin: auto; /* Centra el div horizontalmente */
+}
+
+#contInfoInstrucc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px;
+    width: 50%; /* o cualquier ancho que desees */
+    margin: auto; /* centra el contenedor horizontalmente */
 }
