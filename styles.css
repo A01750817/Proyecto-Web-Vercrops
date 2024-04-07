@@ -66,11 +66,20 @@ nav a:hover{
     }
 }
 
+@media (max-width: 961px){
+    .descripcionm .titulo{
+        font-size: 20px;
+    }
+    
+}
+
 
 #bienvenida{
     margin-bottom: 40px;
     width: 50%; /* o cualquier ancho que desees */
     margin: auto;
+    font-size: 2vw;
+    width: 100%;
 }
 .bienvenidaYboton {
     display: flex;
@@ -84,7 +93,9 @@ nav a:hover{
 
 #text-bienvenida {
     background-color: #808080;
-    border-radius: 20px;
+    border-radius: 20px; 
+    width: 100%;
+    font-weight: 600;
 }
 
 .divImagenJuego {
@@ -131,19 +142,24 @@ nav a:hover{
     }
 }
 
-.descripcion{
+.descripcion, .titulo{
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0 40px;
     font-family: 'Ubuntu';
-    font-size: 25px;
+    font-size: 2vw; /* Cambia el tamaño de la fuente en función del ancho de la ventana del navegador */
+    color: #333333;
 }
 
-.descripcion, .titulo{
-    color: #333333;
-    font-size: auto;
+.titulo{
+    font-family: 'Ubuntu';
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: left;
+    font-weight: 600;
 }
+
 
 
 .click {
@@ -155,13 +171,6 @@ nav a:hover{
     margin-bottom: 0;
 }
 
-
-.titulo{
-    font-family: 'Ubuntu';
-    font-size: auto;
-    padding-left: 40px;
-    padding-right: 40px;
-}
 
 
 #imagen_juego img {
