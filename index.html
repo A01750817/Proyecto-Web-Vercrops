@@ -43,19 +43,35 @@
 
         <!-- Seccion de bienvenida y de boton del juego -->
         <section id="seccionInicial">
-            <div class="bienvenidaYboton w3-half" >
-                <h1 class="titulo">BIENVENIDO A VERCROPS</h1>
-                <p class="descripcion">Bienvenido a un juego de Verqor, el cual consta de de un juego de estrategía, en el que podras jugar con más personas 
-                    o de manera solitaría, las reglas del juego son las siguientes:</p>
-            </div>
-            <div class="w3-half contenedorBoton bienvenidaYboton">
-                <a href="#" class="boton">
-                    <img src="vercrops_full.jpeg" alt="imagen_juego">
-                </a>
-                <p class="click">Click para jugar</p>
+            <div id="PrimerContenedor">
+                <div id="bienvenida" class="bienvenidaYboton w3-half">
+                    <div id="text-bienvenida">
+                        <h1 class="titulo">BIENVENIDO A VERCROPS</h1>
+                        <p class="descripcion">Bienvenido a un juego de Verqor, el cual consta de de un juego de estrategía, en el que podras jugar con más personas 
+                            o de manera solitaría, las reglas del juego son las siguientes:
+                        </p>
+                    </div>
+                </div>
+                <div class="w3-half contenedorBoton bienvenidaYboton">
+                    <div  class="divImagenJuego">
+                        <div class="contenedor-padre" id="imagen_juego">
+                            <img src="vercrops_full.jpeg" alt="imagen_juego" class="imagen-padre">
+                            <a id="imagen_boton"  class="contenedor-hijo">
+                                <img src="play_img.png" alt="play" class="imagen-hijo"/>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="click">Click para jugar</p>
+                </div>
             </div>
         </section>
 
+        <section>
+            <div id="contMainInstrucc">
+                <h1>Conoce las Instrucciones</h1>
+            </div>
+        </section>
+        
         <h1>pop</h1>
         <h1>pop</h1>
         <h1>pop</h1>

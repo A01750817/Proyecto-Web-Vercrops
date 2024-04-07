@@ -1,0 +1,206 @@
+body{
+    margin: 0;
+    font-family: 'Times New Roman', sans-serif;
+    min-width: 320px;
+}
+header{
+    z-index: 1;
+}
+header.a.h2{
+    text-decoration: none !important;
+}
+
+.color-header{
+    text-decoration: none;
+    color: #FD8A32;
+}
+.proyecto_nombre{
+    font-weight: 600;
+}
+header.my-header{
+    top: 0;
+    animation-timeline: scroll();
+    animation-range: 0 100px;
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    background-color:#003474;
+    min-height: 70px;
+    align-items: center;
+    padding: 10px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    height: 50px;
+    margin-right: 10px;
+}
+
+nav a{
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+nav a:hover{
+    color: white;
+}
+
+@media (max-width: 700px){
+    header{
+        flex-direction: column;
+    }
+
+    nav{
+        padding: 10px 0;
+    }
+
+
+    nav a{
+        padding-right: 10px;
+    }
+
+    #imagen_boton{
+        height: 220px;
+    }
+}
+
+
+#bienvenida{
+    margin-bottom: 40px;
+    width: 50%; /* o cualquier ancho que desees */
+    margin: auto;
+}
+.bienvenidaYboton {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px;
+    width: 50%; /* o cualquier ancho que desees */
+    margin: auto; /* centra el contenedor horizontalmente */
+}   
+
+#text-bienvenida {
+    background-color: #808080;
+    border-radius: 20px;
+}
+
+.divImagenJuego {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divImagenJuego img {
+    max-width: 90%; /* Esto limitará el tamaño de la imagen al 50% del contenedor */
+    max-height: 90%;
+    object-fit: contain; /* Esto asegura que la imagen se redimensione correctamente */
+    border-radius: 20px;    
+}
+
+
+#seccionInicial{
+    margin-top: 5%; /* Cambia a porcentaje */
+    margin-bottom: 5%; /* Cambia a porcentaje */
+    background-color: #292929;
+    padding: 20px;
+}
+
+#PrimerContenedor{
+    margin-top: 2.5%; /* Cambia a porcentaje */
+    height: auto; /* Cambia a auto para permitir que el contenido defina la altura */
+    margin-bottom: 2.5%; /* Cambia a porcentaje */
+    display: flex;
+    flex-direction: row; /* Por defecto, los elementos se mostrarán en una fila */
+    align-items: start;
+}
+
+
+@media (max-width: 600px) {
+    #PrimerContenedor{
+        flex-direction: column; /* En pantallas pequeñas, los elementos se mostrarán en una columna */
+    }
+
+    .descripcion{
+        justify-content: flex-start; /* Alinea los elementos al inicio del contenedor */
+    }
+
+    .divImagenJuego{
+        margin-top: 20px; /* Añade un margen superior para separar los elementos */
+    }
+}
+
+.descripcion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px;
+    font-family: 'Ubuntu';
+    font-size: 25px;
+}
+
+.descripcion, .titulo{
+    color: #333333;
+    font-size: auto;
+}
+
+
+.click {
+    color: #FD8A32; /* Color del texto */
+    font-family: "Micro 5" ; /* Fuente del texto */
+    font-size: 40px; /* Tamaño del texto */
+    animation: fadeIn 7s forwards; /* Animación de aparición */
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+.titulo{
+    font-family: 'Ubuntu';
+    font-size: auto;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+
+#imagen_juego img {
+    max-width: 90%; /* Esto limitará el tamaño de la imagen al 90% del contenedor */
+    max-height: 90%;
+    object-fit: contain; /* Esto asegura que la imagen se redimensione correctamente */
+}
+
+#imagen_juego {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+  
+.contenedor-padre {
+    position: relative;
+  }
+  
+.imagen-hijo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    max-height: 100%;
+    width: 100px; /* Permite que el ancho se ajuste proporcionalmente a su contenedor */
+    height: 100px;
+    transition: all 0.3s ease;
+  }
+  
+
+.contenedor-padre:hover .imagen-hijo {
+    transform: translate(-50%, -50%) scale(0.8); /* Cambiar el valor de escala según lo desees */
+  }
+  
+  #contMainInstrucc{
+    background-color: #FD8A32;
+    width: 95%;
+    margin: auto; /* Centra el div horizontalmente */
+}
