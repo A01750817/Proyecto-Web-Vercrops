@@ -2,6 +2,7 @@ body{
     margin: 0;
     font-family: 'Times New Roman', sans-serif;
     min-width: 320px;
+    background-color: #1a1a1a;
 }
 header{
     z-index: 1;
@@ -67,8 +68,8 @@ nav a:hover{
 }
 
 @media (max-width: 961px){
-    .descripcionm .titulo{
-        font-size: 20px;
+    .descripcion .titulo{
+        font-size: 40px;
     }
     
 }
@@ -149,15 +150,18 @@ nav a:hover{
     padding: 0 40px;
     font-family: 'Ubuntu';
     font-size: 2vw; /* Cambia el tamaño de la fuente en función del ancho de la ventana del navegador */
-    color: #333333;
 }
 
+.descripcion{
+    color: #333333;
+}
 .titulo{
     font-family: 'Ubuntu';
     padding-left: 40px;
     padding-right: 40px;
     text-align: left;
     font-weight: 600;
+    color: #333333;
 }
 
 
@@ -207,17 +211,43 @@ nav a:hover{
     transform: translate(-50%, -50%) scale(0.8); /* Cambiar el valor de escala según lo desees */
   }
   
-  #contMainInstrucc{
-    background-color: #EBAD78;
+#contMainInstrucc{
+    /*background-color: #e8c7a8;*/
     margin: auto; /* Centra el div horizontalmente */
+    padding: 40px 0;
+    padding-top: 60px;
 }
 
 #contInfoInstrucc{
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     justify-content: center;
     align-items: center;
     padding: 0 40px;
-    width: 50%; /* o cualquier ancho que desees */
-    margin: auto; /* centra el contenedor horizontalmente */
+    background-color: white;
+}
+
+#contInfoInstrucc img{
+    width: 80px;
+}
+
+#instrucciones-titulo{
+    text-align: left;
+    font-size: 2vw;
+    font-weight: 600;
+    color: hsl(30, 38%, 41%);
+    padding-top: 0;
+    margin-bottom: 60px;
+    font-family: 'Ubuntu';
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: left;
+    font-weight: 600;
+}
+
+
+#conteinerInstrDiv{
+    align-items: center;
+    margin: auto;
+    
 }

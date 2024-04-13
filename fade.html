@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <style>
+            
+            
+
+            .container {
+                position: relative;
+            }
+            
+            .fade {
+                position: relative;
+                width: 100%;
+                overflow: hidden;
+            }
+            
+            .fade img {
+                width: 100%;
+                display: block;
+            }
+
+            #huevo{
+                color: rgb(176, 180, 222);
+                font-size: 1vw;
+                font-family: 'Outfit', sans-serif;
+                
+            }
+            .instruccion-elemento{
+                width: 10%;
+                height: 40%;
+                background-color: aliceblue;
+            }
+            
+            
+            /*.fade::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 30%; 
+                height: 100%;
+                background: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(15, 14, 22));
+            }*/
+            
+            .fade::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 100%; /* Ajusta este valor para cambiar dónde comienza el desvanecimiento */
+                height: 100%;
+                background: linear-gradient(to left, rgba(0, 0, 0, 0), rgb(15, 14, 22) 90%);
+            }
+
+            .gray-box {
+                position: absolute;
+                top: 5vh; /* Ajusta este valor para cambiar la distancia desde la parte superior */
+                left: 5vw; /* Ajusta este valor para cambiar la distancia desde la izquierda */
+                width: 20vw; /* Ajusta este valor para cambiar el ancho del div */
+                height: 10vh; /* Ajusta este valor para cambiar la altura del div */
+                background-color: rgba(7, 3, 92, 0); /* Da al div un fondo gris */
+                z-index: 2; /* Asegura que el div esté por encima de la imagen */
+                border-color: rgb(4, 4, 53);
+                border-width: 2%;
+                border-style: solid;
+                padding-left: 2vw;
+                padding-right: 2vw;
+                align-items: center;
+                justify-content: space-between;
+                display: flex;
+                border-left: 0cap;
+                border-right: 0cap;
+
+            }
+
+            .instruccion-elemento img{
+                width: 100%;
+                height: 100%;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="fade">
+                <img src="https://images7.alphacoders.com/106/1066423.jpg" alt="Imagen">
+                <div class="gray-box">
+                    <!--<p id="huevo">"SI TE ESCONDES EN LAS SOMBRAS, SOLO ME ESTÁS ARRASTRANDO A CASA"</p>-->
+                    <div class="instruccion-elemento">
+                        <img src="wheat.png">
+                    </div>
+                    <div class="instruccion-elemento">
+                    </div>
+                    <div class="instruccion-elemento">
+                    </div>
+                    <div class="instruccion-elemento">
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div style="height: 100px; width:600px; background-color:black; border-radius: 20px">
+            <div class="instruccion-elemento">
+                
+            </div>
+            <div class="instruccion-elemento">
+            </div>
+            <div class="instruccion-elemento">
+            </div>
+            <div class="instruccion-elemento">
+            </div>
+        </div>
+    </body>
+</html>
