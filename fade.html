@@ -27,9 +27,9 @@
                 
             }
             .instruccion-elemento{
-                width: 10%;
-                height: 40%;
-                background-color: aliceblue;
+                width: 13%;
+                height: 45%;
+                background-color: rgba(240, 248, 255, 0.136);
             }
             
             
@@ -61,18 +61,42 @@
                 height: 10vh; /* Ajusta este valor para cambiar la altura del div */
                 background-color: rgba(7, 3, 92, 0); /* Da al div un fondo gris */
                 z-index: 2; /* Asegura que el div esté por encima de la imagen */
-                border-color: rgb(4, 4, 53);
-                border-width: 2%;
+                border-color: rgb(135, 130, 24);
+                border-width: 4px;
                 border-style: solid;
                 padding-left: 2vw;
                 padding-right: 2vw;
                 align-items: center;
                 justify-content: space-between;
                 display: flex;
-                border-left: 0cap;
-                border-right: 0cap;
-
+                border-left: none;
+                border-right: none;
+                flex-direction: row; /* Alinea los elementos en una fila en pantallas grandes */
             }
+
+            @media (max-width: 700px) {
+                .gray-box {
+                    flex-direction: column; /* Alinea los elementos en una columna en pantallas pequeñas */
+
+                    width: 10vw; /* Ajusta este valor para cambiar el ancho del div */
+                    height: 30vw;
+                    border-left: 4px solid rgb(135, 130, 24);
+                    border-right: 4px solid rgb(135, 130, 24);
+                    border-top: none;
+                    border-bottom: none;
+                }
+
+                .instruccion-elemento{
+                    width: 45%;
+                    height: 13%;
+                    background-color: rgba(240, 248, 255, 0.136);
+                    margin-top: 5%;
+                    margin-bottom: 5%;
+                }
+                
+            }
+
+            
 
             .instruccion-elemento img{
                 width: 100%;
