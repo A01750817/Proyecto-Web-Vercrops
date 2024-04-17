@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registrarse</title>
+    <link rel="stylesheet" href="stylessign.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Outfit">
+</head>
+<body style="background-image: url('el_fondo.jpg');">
+
+    <div class="main_container_2">
+        <h2 class="main_text">Registrarse</h2>
+        <form method="post">
+            <div >
+                <label class="form_label" for="name">Nombre<span class="required">*</span>:</label>
+                <br/>
+                <input class="form_field" placeholder="Nombre" type="text" id="name" name="name" required>
+            </div>
+            <div >
+                <label class="form_label" for="lastname">Apellido:<span class="required">*</span></label>
+                <br/>
+                <input class="form_field" placeholder="Apellido" type="text" id="lastname" name="lastname" required>
+            </div>
+            <div >
+                <label class="form_label" for="email">Correo electrónico:<span class="required">*</span></label>
+                <br/>
+                <input class="form_field" placeholder="correo@ejemplo.com" type="email" id="email" name="email" required>
+            </div>
+            <div >
+                <label class="form_label" for="birthdate">Fecha de nacimiento:<span class="required">*</span></label>
+                <br/>
+                <input class="form_field" type="date" id="birthdate" name="birthdate" required>
+            </div>
+            <div >
+                <label class="form_label" for="location">Codigo Postal:<span class="required">*</span></label>
+                <br/>
+                <input class="form_field" placeholder="54060" type="text" id="location" name="location" required>
+            </div>
+            <div >
+                <label class="form_label" for="phone">Número celular:<span class="required">*</span></label>
+                <br/>
+                <input class="form_field" placeholder="55 5555 5555" type="tel" id="phone" name="phone" required>
+            </div>
+            
+            <div>
+                <label for="role">Seleccione su rol:<span class="required">*</span></label>
+                <br/>
+                <select id="role" name="role" required>
+                    <option value="cliente" selected>Cliente</option>
+                    <option value="Fabricante de agroinsumos">Fabricante de agroinsumos</option>
+                    <option value="Distribuidor de agroinsumos">Distribuidor de agroinsumos</option>
+                    <option value="Proveedor de seguros">Proveedor de seguros</option>
+                    <option value="Financiera">Financiera</option>
+                    <option value="Empresa CPG">Empresa CPG</option>
+                    <option value="Acopiador">Acopiador</option>
+                    <option value="Inversionista">Inversionista</option>
+                    <option value="Público general">Público general</option>
+                </select>
+            </div>
+
+            <div >
+                <label class="form_label" for="password">Contraseña:<span class="required">*</span></label>
+                <span class="info-icon" data-tooltip="La contraseña debe contener al menos 8 caracteres.">🛈</span>
+                <br/>
+                <input class="form_field" placeholder="contraseña" type="password" id="password" name="password" required>
+            </div>
+            <div >
+                <label class="form_label" for="password">Confirmar contraseña:<span class="required">*</span></label>
+                <br/>
+                <input class="form_field" placeholder="confirma contraseña" type="password" id="password" name="password" required>
+            </div>
+            <div class="bot_text">
+                <p>
+                    ¿Ya tiene cuenta? <a onclick="loadLog()"><u>Inicie sesión aquí</u></a>
+                </p>
+            </div>
+            <div class="button_container">
+                <button class="button" type="submit">Registrarse</button>
+            </div>
+        </form>
+        
+    </div>
+    <script src="Transition.js" defer></script>
+
+</body>
+</html>

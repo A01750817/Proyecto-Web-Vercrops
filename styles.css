@@ -1,9 +1,12 @@
-body{
+/* Estilos generales */
+body {
     margin: 0;
     font-family: 'Times New Roman', sans-serif;
     min-width: 320px;
     background-color: #1a1a1a;
 }
+
+/* Estilos para el header */
 header{
     z-index: 3;
 }
@@ -67,21 +70,15 @@ nav a:hover{
     }
 }
 
-@media (max-width: 961px){
-    .descripcion .titulo{
-        font-size: 40px;
-    }
-    
-}
-
-
-#bienvenida{
+/* Estilos para la sección de bienvenida */
+#bienvenida {
     margin-bottom: 40px;
     width: 50%; /* o cualquier ancho que desees */
     margin: auto;
     font-size: 2vw;
     width: 100%;
 }
+
 .bienvenidaYboton {
     display: flex;
     flex-direction: column;
@@ -90,15 +87,16 @@ nav a:hover{
     padding: 0 40px;
     width: 50%; /* o cualquier ancho que desees */
     margin: auto; /* centra el contenedor horizontalmente */
-}   
+}
 
 #text-bienvenida {
     background-color: #808080;
-    border-radius: 20px; 
+    border-radius: 20px;
     width: 100%;
     font-weight: 600;
 }
 
+/* Estilos para la sección de la imagen del juego */
 .divImagenJuego {
     display: flex;
     justify-content: center;
@@ -109,17 +107,17 @@ nav a:hover{
     max-width: 90%; /* Esto limitará el tamaño de la imagen al 50% del contenedor */
     max-height: 90%;
     object-fit: contain; /* Esto asegura que la imagen se redimensione correctamente */
-    border-radius: 20px;    
+    border-radius: 20px;
 }
 
-
-#seccionInicial{
-    margin-bottom: 5%; /* Cambia a porcentaje */
+/* Estilos para la sección inicial */
+#seccionInicial {
     background-color: #292929;
     padding: 20px;
 }
 
-#PrimerContenedor{
+/* Estilos para el primer contenedor */
+#PrimerContenedor {
     margin-top: 2.5%; /* Cambia a porcentaje */
     height: auto; /* Cambia a auto para permitir que el contenido defina la altura */
     margin-bottom: 2.5%; /* Cambia a porcentaje */
@@ -128,22 +126,22 @@ nav a:hover{
     align-items: start;
 }
 
-
 @media (max-width: 600px) {
-    #PrimerContenedor{
+    #PrimerContenedor {
         flex-direction: column; /* En pantallas pequeñas, los elementos se mostrarán en una columna */
     }
 
-    .descripcion{
+    .descripcion {
         justify-content: flex-start; /* Alinea los elementos al inicio del contenedor */
     }
 
-    .divImagenJuego{
+    .divImagenJuego {
         margin-top: 20px; /* Añade un margen superior para separar los elementos */
     }
 }
 
-.descripcion, .titulo{
+/* Estilos para la descripción y el título */
+.descripcion, .titulo {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -152,10 +150,11 @@ nav a:hover{
     font-size: 2vw; /* Cambia el tamaño de la fuente en función del ancho de la ventana del navegador */
 }
 
-.descripcion{
+.descripcion {
     color: #333333;
 }
-.titulo{
+
+.titulo {
     font-family: 'Ubuntu';
     padding-left: 40px;
     padding-right: 40px;
@@ -164,8 +163,13 @@ nav a:hover{
     color: #333333;
 }
 
+@media (max-width: 961px) {
+    .descripcion .titulo {
+        font-size: 40px;
+    }
+}
 
-
+/* Estilos para el click */
 .click {
     color: #FD8A32; /* Color del texto */
     font-family: "Micro 5" ; /* Fuente del texto */
@@ -175,8 +179,7 @@ nav a:hover{
     margin-bottom: 0;
 }
 
-
-
+/* Estilos para la imagen del juego */
 #imagen_juego img {
     max-width: 90%; /* Esto limitará el tamaño de la imagen al 90% del contenedor */
     max-height: 90%;
@@ -189,11 +192,12 @@ nav a:hover{
     align-items: center;
     position: relative;
 }
-  
+
+/* Estilos para el contenedor padre */
 .contenedor-padre {
     position: relative;
-  }
-  
+}
+
 .imagen-hijo {
     position: absolute;
     top: 50%;
@@ -204,34 +208,34 @@ nav a:hover{
     width: 100px; /* Permite que el ancho se ajuste proporcionalmente a su contenedor */
     height: 100px;
     transition: all 0.3s ease;
-  }
-  
+}
 
 .contenedor-padre:hover .imagen-hijo {
     transform: translate(-50%, -50%) scale(0.8); /* Cambiar el valor de escala según lo desees */
-  }
-  
-#contMainInstrucc{
+}
+
+/* Estilos para la sección de instrucciones */
+#contMainInstrucc {
     /*background-color: #e8c7a8;*/
     margin: auto; /* Centra el div horizontalmente */
     padding: 40px 0;
     padding-top: 60px;
 }
 
-#contInfoInstrucc{
+#contInfoInstrucc {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 0 40px;
     background-color: white;
 }
 
-#contInfoInstrucc img{
+#contInfoInstrucc img {
     width: 80px;
 }
 
-#instrucciones-titulo{
+#instrucciones-titulo {
     text-align: left;
     font-size: 2vw;
     font-weight: 600;
@@ -245,15 +249,10 @@ nav a:hover{
     font-weight: 600;
 }
 
-
-#conteinerInstrDiv{
+#conteinerInstrDiv {
     align-items: center;
     margin: auto;
-    
 }
-
-            
-            
 
 .container {
     position: relative;
@@ -263,35 +262,18 @@ nav a:hover{
     position: relative;
     width: 100%;
     overflow: hidden;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    /*agregamos que los divs interiores se desplieguen en columna siempre*/
+   
+
 }
 
 .fade img {
     width: 100%;
     display: block;
 }
-
-#huevo{
-    color: rgb(176, 180, 222);
-    font-size: 1vw;
-    font-family: 'Outfit', sans-serif;
-    
-}
-.instruccion-elemento{
-    width: 13%;
-    height: 45%;
-    background-color: rgba(240, 248, 255, 0.136);
-}
-
-
-/*.fade::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 30%; 
-    height: 100%;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(15, 14, 22));
-}*/
 
 .fade::after {
     content: "";
@@ -300,15 +282,34 @@ nav a:hover{
     right: 0;
     width: 100%; /* Ajusta este valor para cambiar dónde comienza el desvanecimiento */
     height: 100%;
-    background: linear-gradient(to left, rgba(0, 0, 0, 0), rgb(15, 14, 22) 90%);
+    background: linear-gradient(to left, rgba(0, 0, 0, 0), rgb(15, 14, 22) 80%);
 }
 
+#huevo {
+    color: rgb(176, 180, 222);
+    font-size: 1vw;
+    font-family: 'Outfit', sans-serif;
+}
+
+.instruccion-elemento {
+    width: 13%;
+    height: 45%;
+    background-color: rgba(240, 248, 255, 0.136);
+}
+
+
+.instruccion-elemento img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Estilos para la caja gris */
 .gray-box {
     position: absolute;
     top: 5vh; /* Ajusta este valor para cambiar la distancia desde la parte superior */
     left: 5vw; /* Ajusta este valor para cambiar la distancia desde la izquierda */
-    width: 20vw; /* Ajusta este valor para cambiar el ancho del div */
-    height: 10vh; /* Ajusta este valor para cambiar la altura del div */
+    width: 21vw; /* Ajusta este valor para cambiar el ancho del div */
+    height: 8%; /* Ajusta este valor para cambiar la altura del div */
     background-color: rgba(7, 3, 92, 0); /* Da al div un fondo gris */
     z-index: 2; /* Asegura que el div esté por encima de la imagen */
     border-color: rgb(135, 130, 24);
@@ -324,30 +325,85 @@ nav a:hover{
     flex-direction: row; /* Alinea los elementos en una fila en pantallas grandes */
 }
 
+
+
+.text-inst{
+    position: absolute;
+    top: 1%; /* Ajusta este valor para cambiar la distancia desde la parte superior */
+    left: 5vw; /* Ajusta este valor para cambiar la distancia desde la izquierda */
+    width: 20vw; /* Ajusta este valor para cambiar el ancho del div */
+    height: 35%; /* Ajusta este valor para cambiar la altura del div */
+    background-color: rgba(7, 3, 92, 0); /* Da al div un fondo gris */
+    z-index: 2; /* Asegura que el div esté por encima de la imagen */
+    border-color: rgb(135, 130, 24);
+    color: rgb(150, 150, 145);
+    border-width: 0.5vw;
+    border-style: solid;
+    padding-left: 2vw;
+    font-size: 1.1vw;
+    padding-right: 2vw;
+    display: flex;
+    flex-direction: row; /* Alinea los elementos en una fila en pantallas grandes */
+    margin-top: 15%;
+}
+
 @media (max-width: 700px) {
     .gray-box {
         flex-direction: column; /* Alinea los elementos en una columna en pantallas pequeñas */
+        top: 2vh;
         width: 10vw; /* Ajusta este valor para cambiar el ancho del div */
-        height: 30vw;
-        border-left: 4px solid rgb(135, 130, 24);
-        border-right: 4px solid rgb(135, 130, 24);
+        height: 26vw;
+        border-left: 0.4vh solid rgb(135, 130, 24);
+        border-right: 0.4vh solid rgb(135, 130, 24);
         border-top: none;
         border-bottom: none;
     }
-
-    .instruccion-elemento{
+    .instruccion-elemento {
         width: 100%;
-        height: 20%;
+        height: 17%;
         background-color: rgba(240, 248, 255, 0.136);
         margin-top: 2%;
         margin-bottom: 2%;
     }
-    
+
+    .text-inst{
+        margin-top: 35%;
+        font-size: 1.1vw;
+        width: 25%; /* Ajusta este valor para cambiar el ancho del div */
+        height: 30%;
+    }
+
 }
 
 
 
-.instruccion-elemento img{
+/*Sección de aprendizaje*/
+.estilo-div-titulo{
+    background-color: #808080;
+    /*div con ancho igual al ancho del texto*/
+    display: inline-block;
+    padding: 10px;
+    border-radius: 15px;
+    font-weight: 600;
+    color: white;
+    font-size: 2vw;
+    margin-bottom: 20px;
+    /*div centrado al centro de la pagina*/
+    text-align: center;
+}
+
+.AprendMainDiv{
+    background-color: #d5d3d3;
     width: 100%;
-    height: 100%;
+    padding: 40px 0;
+    padding-top: 60px;
+}
+
+datoDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px;
+    background-color: white;
 }

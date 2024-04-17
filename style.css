@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap');
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+.container_a {
+    width: 70%;
+    margin-top: 50px;
+    margin-left: 140px;
+    padding: 0;
+}
+
+.slides {
+    width: 120%;
+    display: flex;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.slide {
+    list-style-type: none;
+    height: 590px;
+    width: 4%;
+    overflow: hidden;
+    -webkit-transition:all 500ms linear;
+	-moz-transition:all 500ms linear;
+	-o-transition:all 500ms linear;
+	-ms-transition:all 500ms linear;
+	transition:all 500ms linear;
+}
+
+/* brands colors */
+.reg{
+    background-color: #003474;
+}
+.calif{
+    background-color: #FD8A32;
+}
+.inic{
+    background-color: #3c3c3c;
+}
+.entr{
+    background-color: #EBAD78;
+}
+.tie{
+    background-color: #003474;
+}
+
+.wi{
+    background-color: #CC5E16;
+}
+
+.winsver{
+    background-color: #003474;
+}
+
+.ro{
+    background-color: #FD8A32;
+}
+
+.ma{
+    background-color: #0E4376 ;
+}
+
+.slide a.action{
+    display: block;
+    height: 100%;
+    position: relative;
+}
+.slide a.action span{
+    font-weight: 600;
+    color:#fff;
+    transform: rotate(270deg);
+    position: absolute;
+    top: 10%;
+    width: 140px;
+    left: -30%;
+    height: 100px;
+}
+.slide-content{
+    display: block;
+    width: 100%;
+    padding: 30px;
+    color:#fff;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.active {
+    width:85%;
+}
+.active a.action{
+    display: none;
+}
+
+body{
+    background-color: #2951bf;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.chart{
+    padding: 8px; 
+    margin: 20px;
+    border: 1px solid #143674;
+    border-radius: 1rem;
+    background: #636373;
+    box-shadow: 0 0 16px rgba(78, 74, 74, 0.8);
+    width: 660px; 
+    height: 350px;
+}
+
+.chart_2{
+    padding: 8px;
+    margin: 20px;
+    border: 1px solid #295fc5;
+    border-radius: 1rem;
+    background: #636373;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.8);
+    width: 600px;
+    height: 400px;
+}
+
+.chartBox {
+    margin: 20px;
+    width: 750px;
+    height: 450px;
+    border-radius: 1rem;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.8);
+    border: solid 1px #295fc5;
+    background: #4b4359;
+ }

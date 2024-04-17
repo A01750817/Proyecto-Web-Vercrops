@@ -1,0 +1,115 @@
+body{
+    font-family: 'Outfit', sans-serif;
+    color: #0E4376;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0; 
+    padding: 0;
+    opacity: 0;
+    animation: fadeIn ease 1s;
+    animation-fill-mode: forwards;
+}
+
+.main_container_2 {
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 21px;
+    margin: 20px;
+    padding: 20px 50px 20px;
+    flex-direction: column;
+    width: 280px;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.main_container_2::before {
+    content: "";
+    position: absolute;
+    top: -2px; /* Adjust these values to match your desired border size */
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(90deg, #FD8A32, #38ABF2);
+    border-radius: inherit; /* Inherit the border-radius from the parent container */
+    z-index: -1; /* Put the gradient behind the content of the main container */
+}
+
+.main_text{
+    text-align: center;
+    font-size: xx-large;
+}
+
+.form_label{
+    text-align: center;
+    font-size: 13px;
+}
+.form_field{    
+    text-align: left;
+    font-size: 13px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-color: #b1b1b1;
+    border-width: 2px;
+    border-radius: 3px;
+}
+
+.button_container{
+    border: 0cap;
+    border-radius: 3px;
+    padding: 10px;
+    color: #f4f4f4;
+    text-align: center;
+}
+
+button{
+    background-color: #FD8A32;
+    border: 0cap;
+    border-radius: 5px;
+    padding: 10px;
+    color: #f4f4f4;
+    align-self: center;
+}
+
+.bot_text{
+    font-size: small;
+}
+
+.required{
+    color: red;
+}
+
+.info-icon {
+    display: inline-block;
+    color: #000000;
+    cursor: pointer;
+    font-size: 10px;
+}
+
+.info-icon:before {
+    content: attr(data-tooltip);
+    display: none;
+    position: absolute;
+    background: #EBAD78;
+    color: #fff;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+.info-icon:hover:before {
+    display: block;
+}
+
+.fade-out {
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}

@@ -2,92 +2,156 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Vercrops</title>
-    <!-- meta viewport sirve para que la pagina se adapte a cualquier dispositivo -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- link para importar imagen de icono -->
-    <link rel="shortcut icon" type="x-icon" href="https://verqor.com/favicon/256.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Graficos</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <!-- Estas líneas establecen una preconexión con los dominios mencionados. 
-    Esto puede hacer que la carga de los recursos de estos dominios sea más rápida, ya que
-    la conexión se establece antes de que se soliciten los recursos.-->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <!-- Estas líneas importan fuentes de Google Fonts. Las fuentes importadas son "Outfit" y "Micro 5".-->
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Micro+5&display=swap" rel="stylesheet">
-    <!-- Esta línea importa la fuente Ubuntu de Google Fonts.-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-    
-
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-    <!-- Encabezado movil estatico siempre esta en la parte de arriba sin importar que scrolles
-        en toda la pagina -->
-        <header class="my-header">
-            <a href="#" class="logo" style="text-decoration: none;">
-                <img src="https://verqor.com/favicon/256.png " alt="logo_vercrops">
-                <h2 class="nombre_proyecto color-header">Vercrops</h2>
+    <header class="my-header">
+        <a href="#" class="logo" style="text-decoration: none;">
+            <img src="https://verqor.com/favicon/256.png " alt="logo_vercrops">
+            <h2 class="nombre_proyecto color-header">Vercrops</h2>
 
-            </a>
-            <nav>
-                <a href="" class="nav-link color-header">Bienvenida</a>
-                <a href="" class="nav-link color-header">Reglas</a>
-                <a href="" class="nav-link color-header">Instrucciones</a>
-                <a href="" class="nav-link color-header">Aprende</a>
-            </nav>
-        </header>
+        </a>
+        <nav>
+            <a href="indexP.html" class="nav-link color-header">Bienvenida</a>
+            <a href="indexP.html" class="nav-link color-header">Reglas</a>
+            <a href="indexP.html#instTit" class="nav-link color-header">Instrucciones</a>
+            <a href="" class="nav-link color-header">Aprende</a>
+            <a href="INDEX.html" class="nav-link color-header invisible">Dashboard</a>
+        </nav>
+    </header>
 
-        <!-- Seccion de bienvenida y de boton del juego -->
-        <section id="seccionInicial">
-            <div id="PrimerContenedor">
-                <div id="bienvenida" class="bienvenidaYboton w3-half">
-                    <div id="text-bienvenida">
-                        <h1 class="titulo">BIENVENIDO A VERCROPS</h1>
-                        <p class="descripcion">Bienvenido a un juego de Verqor, el cual consta de de un juego de estrategía, en el que podras jugar con más personas 
-                            o de manera solitaría, las reglas del juego son las siguientes:
+    <div class="container_a">
+        <div class="container-slides">
+            <ul class="slides">
+                <li class="slide active reg">
+                    <a href="#" class="action"><span>Registros</span></a>
+                    <div class="slide-content">
+                        <h2>Registros</h2>
+                        <div class="chart">
+                            <canvas id="registros"></canvas> 
+                        </div>
+                        <p>
+                        Esta grafica representa el número de registros que se hicieron en la página de bienvenida del videojuego, el que se almacenan en un sistema por un largo tiempo.
                         </p>
                     </div>
-                </div>
-                <div class="w3-half contenedorBoton bienvenidaYboton">
-                    <div  class="divImagenJuego">
-                        <div class="contenedor-padre" id="imagen_juego">
-                            <img src="vercrops_full.jpeg" alt="imagen_juego" class="imagen-padre">
-                            <a id="imagen_boton"  class="contenedor-hijo">
-                                <img src="play_img.png" alt="play" class="imagen-hijo"/>
-                            </a>
+                </li>
+                <li class="slide calif">
+                    <a href="#" class="action"><span>Calificaciones</span></a>
+                    <div class="slide-content">
+                        <h2>Calificaciones</h2>
+                        <div class="chart">
+                            <canvas id="calificacion"></canvas> 
                         </div>
+                        <p>
+                        Esta grafica muestra la calificacion de la experiencia de los usuarios hacia el videojuego.
+                        </p>
                     </div>
-                    <p class="click">Click para jugar</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Seccion Instrucciones -->
-        <section>
-            <div class="container">
-                <div class="fade">
-                    <img src="https://images7.alphacoders.com/106/1066423.jpg" alt="Imagen">
-                    <div class="gray-box">
-                        <!--<p id="huevo">"SI TE ESCONDES EN LAS SOMBRAS, SOLO ME ESTÁS ARRASTRANDO A CASA"</p>-->
-                        <div class="instruccion-elemento">
-                            <img src="wheat.png">
+                </li>
+                <li class="slide inic">
+                    <a href="#" class="action"><span>Inicios</span></a>
+                    <div class="slide-content">
+                        <h2>Inicios</h2>
+                        <div class="chart">
+                            <canvas id="inicios"></canvas> 
                         </div>
-                        <div class="instruccion-elemento">
-                        </div>
-                        <div class="instruccion-elemento">
-                        </div>
-                        <div class="instruccion-elemento">
-                        </div>
+                        <p>
+                        Esta gráfica muestra las veces que los usuarios iniciaron sesión con una cuenta previamente registrada.
+                        </p>
                     </div>
-                </div>
-                
-            </div>
-        </section>
+                </li>
+                <li class="slide entr">
+                    <a href="#" class="action"><span>Entradas</span></a>
+                    <div class="slide-content">
+                        <h2>Entradas</h2>
+                        <div class="chart">
+                            <canvas id="entradas"></canvas> 
+                        </div>
+                        <p>
+                        Esta gráfica muestra el número de personas que entraron al videojuego.
+                        </p>
+                    </div>
+                </li>
+                <li class="slide tie">
+                    <a href="#" class="action"><span>Tiempo</span></a>
+                    <div class="slide-content">
+                        <h2>Tiempo</h2>
+                        <div class="chart">
+                            <canvas id="tiempo"></canvas> 
+                        </div>
+                        <p>
+                        Esta grafica muestra la cantidad de tiempo que estuvieron dentro del videojuego.
+                        </p>
+                    </div>
+                </li>
+                <li class="slide wi">
+                    <a href="#" class="action"><span>Wins</span></a>
+                    <div class="slide-content">
+                        <h2>Wins</h2>
+                        <div class="chart">
+                            <canvas id="wins"></canvas> 
+                        </div>
+                        <p>
+                        Veces que se gano una partida sin la ayuda de Verqor.
+                        </p>
+                    </div>
+                </li>
+                <li class="slide winsver">
+                    <a href="#" class="action"><span>Wins Verqor</span></a>
+                    <div class="slide-content">
+                        <h2>Wins Verqor</h2>
+                        <div class="chart">
+                            <canvas id="winverqor"></canvas> 
+                        </div>
+                        <p>
+                        Veces que se gano una partida con la ayuda de Verqor.
+                        </p>
+                    </div>
+                </li>
+                <li class="slide ro">
+                    <a href="#" class="action"><span>Rol</span></a>
+                    <div class="slide-content">
+                        <h2>Rol</h2>
+                        <div class="chart_2">
+                            <canvas id="rol"></canvas> 
+                        </div>
+                        <p>
+                        Tipo de roles registrados por los usuarios.
+                        </p>
+                    </div>
+                </li>
+                <li class="slide ma">
+                    <a href="#" class="action"><span>Mapa</span></a>
+                    <div class="slide-content">
+                        <h2>Mapa</h2>
+                        <div class="chartBox">
+                            <canvas id="myChart"></canvas>
+                        </div>
+                        <p>
+                        Cantidad y lugar proveniente de los usuarios.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
 
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script defer src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.umd.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/chartjs-chart-geo@3.5.2/build/index.umd.min.js"></script>
+    <script defer src="registros.js"></script>
+    <script defer src="rol.js"></script>
+    <script defer src="inicios.js"></script>
+    <script defer src="tiempo.js"></script>
+    <script defer src="wins.js"></script>
+    <script defer src="calificacion.js"></script>
+    <script defer src="winverqor.js"></script>
+    <script defer src="entradas.js"></script>
+    <script defer src="mapa.js"></script>
 </body>
-
 </html>

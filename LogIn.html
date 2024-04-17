@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Outfit">
+</head>
+<body>
+    <div class="main_container_2">
+        <div class="main_container_wrapper">
+            <div class="main_container">
+                <h2 class="main_text">Iniciar Sesión</h2>
+                <form method="post">
+                    <div >
+                        <label class="form_label" for="email">Correo electrónico:<span class="required">*</span></label>
+                        <br/>
+                        <input class="form_field" placeholder="correo@ejemplo.com" type="email" id="email" name="email" required>
+                    </div>
+                    <div >
+                        <label class="form_label" for="password">Contraseña:<span class="required">*</span></label>
+                        <br/>
+                        <input class="form_field" type="password" id="password" name="password" required>
+                    </div>
+                    <div class="bot_text">
+                        <p>
+                            ¿No tiene cuenta? <a onclick="loadSign()"><u>Registrese aquí</u></a>
+                        </p>
+                    </div>
+                    <div class="button_container">
+                        <button class="button" type="submit">Iniciar Sesión</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="image_container_wrapper">
+            <div class="image_container">
+                <img src="field - copia.jpg">
+                <img class="top_image" src="logo-whitever.png">
+            </div>
+        </div>
+        
+    </div>
+    <script src="Transition.js" defer></script>
+</body>
+</html>

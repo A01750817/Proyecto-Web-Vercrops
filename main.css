@@ -1,0 +1,120 @@
+body{
+    font-family: 'Outfit', sans-serif;
+    color: #0E4376;
+    background: rgb(2,0,36);
+    background: linear-gradient(#010728, #03138e);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: 0;
+    animation: fadeIn ease 1s;
+    animation-fill-mode: forwards;
+}
+
+.main_container_2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 89vh;
+    margin: 30px 10px 10px;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+.main_container_wrapper, .image_container_wrapper {
+    flex: 1; /* This will make the wrappers take up equal space */
+}
+
+.main_container {
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 21px;
+    margin: 30px 30px 30px 150px;
+    padding: 60px;
+    flex-direction: column;
+    width: 300px;
+}
+
+.main_container::before {
+    content: "";
+    position: absolute;
+    top: -2px; /* Adjust these values to match your desired border size */
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(90deg, #FD8A32, #38ABF2);
+    border-radius: inherit; /* Inherit the border-radius from the parent container */
+    z-index: -1; /* Put the gradient behind the content of the main container */
+}
+
+
+.image_container{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+}
+
+.top_image {
+    position: absolute;
+    top: 260px;
+    left: 220px;
+    width: 40%; /* Adjust this value as needed */
+    height: auto;
+}
+
+.main_text{
+    text-align: center;
+    font-size: xx-large;
+}
+
+.form_label{
+    text-align: center;
+}
+.form_field{    
+    text-align: left;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-color: #b1b1b1;
+    border-width: 2px;
+    border-radius: 3px;
+
+}
+
+.button_container{
+    border: 0cap;
+    border-radius: 3px;
+    padding: 10px;
+    color: #f4f4f4;
+    text-align: center;
+}
+
+button{
+    background-color: #FD8A32;
+    border: 0cap;
+    border-radius: 5px;
+    padding: 10px;
+    color: #f4f4f4;
+    align-self: center;
+}
+
+.bot_text{
+    font-size: small;
+}
+
+.required{
+    color: red;
+}
+
+.fade-out {
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
