@@ -72,11 +72,11 @@ nav a:hover{
 
 /* Estilos para la sección de bienvenida */
 #bienvenida {
-    margin-bottom: 40px;
-    width: 50%; /* o cualquier ancho que desees */
+    margin-bottom: 90vh;
+    width: 70%; /* o cualquier ancho que desees */
+    height: 10%;
     margin: auto;
-    font-size: 2vw;
-    width: 100%;
+    font-size: 2v;
 }
 
 .bienvenidaYboton {
@@ -91,7 +91,7 @@ nav a:hover{
 
 #text-bienvenida {
     background-color: #808080;
-    border-radius: 20px;
+    border-radius: 5px;
     width: 100%;
     font-weight: 600;
 }
@@ -107,7 +107,7 @@ nav a:hover{
     max-width: 90%; /* Esto limitará el tamaño de la imagen al 50% del contenedor */
     max-height: 90%;
     object-fit: contain; /* Esto asegura que la imagen se redimensione correctamente */
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 /* Estilos para la sección inicial */
@@ -145,29 +145,29 @@ nav a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 40px;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 2vw;
+    padding-right: 2vw;
     font-family: 'Ubuntu';
     font-size: 2vw; /* Cambia el tamaño de la fuente en función del ancho de la ventana del navegador */
 }
 
 .descripcion {
     color: #333333;
+    font-size: 1.5vw;
 }
 
 .titulo {
     font-family: 'Ubuntu';
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 2vw;
+    padding-right: 2vw;
     text-align: left;
     font-weight: 600;
-    color: #333333;
+    color:  #333333;
+    font-size: 2.5vw;
 }
 
-@media (max-width: 961px) {
-    .descripcion .titulo {
-        font-size: 40px;
-    }
-}
 
 /* Estilos para el click */
 .click {
@@ -262,7 +262,6 @@ nav a:hover{
     position: relative;
     width: 100%;
     overflow: hidden;
-    margin-bottom: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(0, 0, 0, 0.1);
     /*agregamos que los divs interiores se desplieguen en columna siempre*/
@@ -373,6 +372,22 @@ nav a:hover{
         height: 30%;
     }
 
+    .descripcion {
+        color: #333333;
+        font-size: 2vw;
+        padding-right: 4vw;
+        padding-left: 4vw;
+    }
+
+    .titulo{
+        font-size: 2vw;
+    
+    }
+
+    #bienvenida {
+        width: 80vw;
+    }
+
 }
 
 
@@ -393,13 +408,13 @@ nav a:hover{
 }
 
 .AprendMainDiv{
-    background-color: #d5d3d3;
+    background-color: #dfdddd;
     width: 100%;
     padding: 40px 0;
     padding-top: 60px;
 }
 
-datoDiv{
+.datoDiv{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -407,3 +422,19 @@ datoDiv{
     padding: 0 40px;
     background-color: white;
 }
+
+.secTit{
+    font-family: 'Ubuntu';
+    padding-left: 2vw;
+    padding-right: 2vw;
+    text-align: left;
+    font-weight: 600;
+    color:  #908787;
+    font-size: 2.5vw;
+}
+
+#seccionAprendizaje{
+    margin-top: 30px;
+}
+
+
