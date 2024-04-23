@@ -293,13 +293,14 @@ nav a:hover{
 .instruccion-elemento {
     width: 13%;
     height: 45%;
-    background-color: rgba(240, 248, 255, 0.136);
+   /* background-color: rgba(240, 248, 255, 0.136);*/
 }
 
 
 .instruccion-elemento img {
     width: 100%;
     height: 100%;
+    filter: invert(1);
 }
 
 /* Estilos para la caja gris */
