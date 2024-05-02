@@ -41,6 +41,14 @@ const rutaAdminHTML = path.join(__dirname, 'Frontend', 'html_principal', 'indexP
 console.log(rutaAdminHTML);
 app.get('/admin', soloAdmin, (req, res) => res.sendFile(rutaAdminHTML));
 
+app.get('/app', (req, res) => {
+    // Ruta al archivo INDEX_charts.html
+    const indexPath = path.join(__dirname, 'Frontend', 'el_html_extras', 'INDEX_charts.html');
+    
+    // Envía el archivo como respuesta
+    res.sendFile(indexPath);
+});
+
 // Rutas para API
 app.post('/api/login', login); // Ruta para la autenticación de usuario (login)
 app.post('/api/register', register); // Ruta para el registro de nuevo usuario
