@@ -49,6 +49,7 @@ app.get('/app', (req, res) => {
     res.sendFile(indexPath);
 });
 
+app.use(express.static(path.join(__dirname, 'Frontend', 'el_html_extras'))); // Servir archivos estáticos desde la carpeta 'el_html_extras'
 // Rutas para API
 app.post('/api/login', login); // Ruta para la autenticación de usuario (login)
 app.post('/api/register', register); // Ruta para el registro de nuevo usuario
