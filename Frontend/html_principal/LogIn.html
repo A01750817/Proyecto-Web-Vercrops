@@ -12,11 +12,11 @@
         <div class="main_container_wrapper">
             <div class="main_container">
                 <h2 class="main_text">Iniciar Sesión</h2>
-                <form method="post">
+                <form id="login-form" method="post">
                     <div >
-                        <label class="form_label" for="email">Correo electrónico:<span class="required">*</span></label>
+                        <label class="form_label" for="correoElectronico">Correo electrónico:<span class="required">*</span></label>
                         <br/>
-                        <input class="form_field" placeholder="correo@ejemplo.com" type="email" id="email" name="email" required>
+                        <input class="form_field" placeholder="correo@ejemplo.com" type="email" id="correoElectronico" name="correoElectronico" required>
                     </div>
                     <div >
                         <label class="form_label" for="password">Contraseña:<span class="required">*</span></label>
@@ -25,7 +25,8 @@
                     </div>
                     <div class="bot_text">
                         <p>
-                            ¿No tiene cuenta? <a onclick="loadSign()"><u>Registrese aquí</u></a>
+                            ¿No tiene cuenta? <a onclick="loadSign()" href="/register"><u>Registrese aquí</u></a>
+
                         </p>
                     </div>
                     <div class="button_container">
