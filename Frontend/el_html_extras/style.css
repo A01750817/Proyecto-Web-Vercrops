@@ -91,6 +91,7 @@
 .active {
     width:85%;
 }
+
 .active a.action{
     display: none;
 }
@@ -131,5 +132,5 @@ body{
     border-radius: 1rem;
     box-shadow: 0 0 16px rgba(0, 0, 0, 0.8);
     border: solid 1px #295fc5;
-    background: #4b4359;
+    background-color: #4b4359;
  }
