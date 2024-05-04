@@ -5,16 +5,18 @@ import dotenv from 'dotenv';
 import fetch from 'node-fetch';
 
 dotenv.config();
+let usuarios = [];
 
-// Función para obtener usuarios desde la API
 export async function getUsuarios() {
     const response = await fetch('https://sqjjdz5n-3000.usw3.devtunnels.ms/api/usuarios');
-    const usuarios = await response.json();
+    usuarios = await response.json();
     return usuarios;
 }
 
+export { usuarios };
+
 // Función para el inicio de sesión
-export async function login(req, res) {
+async function login(req, res) {
     console.log(req.body);
     const correoElectronico = req.body.correoElectronico;
     const password = req.body.password;
@@ -44,7 +46,7 @@ export async function login(req, res) {
 }
  
 // Función para el registro de usuarios
-export async function register(req, res) {
+async function register(req, res) {
     // Imprimimos el cuerpo de la solicitud
     console.log(req.body);
     // Extraemos los campos del cuerpo de la solicitud
@@ -93,3 +95,8 @@ export async function register(req, res) {
     // Enviamos una respuesta con estado 201, un mensaje de éxito y una redirección
     return res.status(201).send({ status: "ok", message: `Usuario ${nuevoUsuario.email} agregado`, redirect: "/" });
 }
+
+export const methods = {
+    login,
+    register
+  }
