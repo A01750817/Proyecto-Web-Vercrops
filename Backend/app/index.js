@@ -37,19 +37,19 @@ app.use(cookieParser());
 const rutaLoginHTML = path.join(__dirname, 'Frontend', 'html_principal', 'Login.html');
 app.get('/', soloPublico, (req, res) => res.sendFile(rutaLoginHTML));
 
-app.get('/app', soloAdmin,(req, res) => {
-    // Ruta al archivo INDEX_charts.html
-    const indexPath = path.join(__dirname, 'Frontend', 'el_html_extras', 'INDEX_charts.html');
-    
+// Ruta al archivo INDEX_charts.html
+const indexPath = path.join(__dirname, 'Frontend', 'el_html_extras', 'INDEX_charts.html');
     // Envía el archivo como respuesta
-    res.sendFile(indexPath);
-});
+
 
 const rutaRegisterHTML = path.join(__dirname, 'Frontend', 'html_principal', 'SignUp.html');
-app.get('/register', soloPublico, (req, res) => res.sendFile(rutaRegisterHTML));
 
 const rutaAdminHTML = path.join(__dirname, 'Frontend', 'html_principal', 'indexP.html');
-console.log(rutaAdminHTML);
+//console.log(rutaAdminHTML);
+
+app.get('/app', soloAdmin,(req, res) => res.sendFile(indexPath));
+console.log(rutaRegisterHTML)
+app.get('/register', soloPublico, (req, res) => res.sendFile(rutaRegisterHTML));
 app.get('/admin', (req, res) => res.sendFile(rutaAdminHTML));
 
 // Rutas para API

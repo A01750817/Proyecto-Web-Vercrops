@@ -6,6 +6,7 @@
     <title>Registrarse</title>
     <link rel="stylesheet" href="stylessign.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Outfit">
+    <script src="../../Backend/app/public/register.js" defer></script>
 </head>
 <body style="background-image: url('el_fondo.jpg');">
 
@@ -47,15 +48,15 @@
                 <label for="role">Seleccione su rol:<span class="required">*</span></label>
                 <br/>
                 <select id="role" name="role" required>
-                    <option value="cliente" selected>Cliente</option>
-                    <option value="Fabricante de agroinsumos">Fabricante de agroinsumos</option>
-                    <option value="Distribuidor de agroinsumos">Distribuidor de agroinsumos</option>
-                    <option value="Proveedor de seguros">Proveedor de seguros</option>
-                    <option value="Financiera">Financiera</option>
-                    <option value="Empresa CPG">Empresa CPG</option>
-                    <option value="Acopiador">Acopiador</option>
-                    <option value="Inversionista">Inversionista</option>
-                    <option value="Público general">Público general</option>
+                    <option value="1" selected>Cliente</option>
+                    <option value="2">Fabricante de agroinsumos</option>
+                    <option value="3">Distribuidor de agroinsumos</option>
+                    <option value="4">Proveedor de seguros</option>
+                    <option value="5">Financiera</option>
+                    <option value="6">Empresa CPG</option>
+                    <option value="7">Acopiador</option>
+                    <option value="8">Inversionista</option>
+                    <option value="9">Público general</option>
                 </select>
             </div>
 
@@ -66,9 +67,9 @@
                 <input class="form_field" placeholder="contraseña" type="password" id="password" name="password" required>
             </div>
             <div >
-                <label class="form_label" for="password">Confirmar contraseña:<span class="required">*</span></label>
+                <label class="form_label" for="confirm-password">Confirmar contraseña:<span class="required">*</span></label>
                 <br/>
-                <input class="form_field" placeholder="confirma contraseña" type="password" id="password" name="password" required>
+                <input class="form_field" placeholder="confirma contraseña" type="password" id="confirm-password" name="confirm-password" required>
             </div>
             <div class="bot_text">
                 <p>
@@ -76,7 +77,7 @@
                 </p>
             </div>
             <div class="button_container">
-                <button class="button" type="submit"><a onclick="loadSign()" href="indexP.html">Registrarse</a></button> <!-- el <a> es un hypervinculo que redirecciona a la página principal -->
+                <button class="button" type="submit">Registrarse</button> <!-- el <a> es un hypervinculo que redirecciona a la página principal -->
             </div>
         </form>
         
