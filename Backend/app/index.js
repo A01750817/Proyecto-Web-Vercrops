@@ -26,7 +26,8 @@ console.log('Server on port', app.get('port'));
 // Configuración
 app.use(express.static(path.join(__dirname, 'Frontend', 'html_principal')));
 app.use(express.static(path.join(__dirname, 'Frontend', 'el_html_extras')));
-app.use(express.static(path.join(__dirname, 'los_scripts'))); // Servir archivos estáticos desde la carpeta 'los_scripts'
+app.use(express.static(path.join(__dirname, 'Frontend','los_scripts'))); // Servir archivos estáticos desde la carpeta 'los_scripts'
+
 // Analiza los cuerpos de las peticiones JSON entrantes
 app.use(express.json()); 
 // Analiza las cookies enviadas por el cliente
