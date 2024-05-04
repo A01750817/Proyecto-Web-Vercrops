@@ -18,6 +18,7 @@ CREATE TABLE IF NOT EXISTS `Usuario` (
   `Nombre` VARCHAR(45) NOT NULL,
   `Apellido` VARCHAR(45) NOT NULL,
   `FechaNacimiento` DATE NOT NULL,
+  `CodigoPostal` INT NOT NULL, -- esto fue agregado para el registro de usuario del codigo postal
   `Telefono` VARCHAR(20) NOT NULL,
   `idTipo_Usuario` INT NOT NULL,
   PRIMARY KEY (`idUsuario`),
