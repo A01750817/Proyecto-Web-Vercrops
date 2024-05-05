@@ -30,9 +30,9 @@ const indexPath = path.join(__dirname, '..','..', 'Frontend', 'html_principal', 
 console.log(rutaRegisterHTML);
 
 // Definimos las rutas de la aplicación
-app.get('/', authorization.soloPublico, (req,res)=> res.sendFile(rutaLoginHTML)); // Página de inicio de sesión
-app.get('/register', authorization.soloPublico,(req,res)=> res.sendFile(rutaRegisterHTML)); // Página de registro
-app.get('/app', authorization.soloAdmin,(req,res)=> res.sendFile(indexPath)); // Página de aplicación
+app.get('/', (req,res)=> res.sendFile(rutaLoginHTML)); // Página de inicio de sesión
+app.get('/register', (req,res)=> res.sendFile(rutaRegisterHTML)); // Página de registro
+app.get('/app',(req,res)=> res.sendFile(indexPath)); // Página de aplicación
 //app.get('/admin', authorization.soloAdmin,(req,res)=> res.sendFile(rutaAdminHTML)); // Página de administración
-app.post('/api/login', authentication.login); // Endpoint de inicio de sesión
-app.post('/api/register', authentication.register); // Endpoint de registro
+app.post('/api/login'); // Endpoint de inicio de sesión
+app.post('/api/register' ); // Endpoint de registro

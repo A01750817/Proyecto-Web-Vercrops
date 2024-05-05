@@ -6,20 +6,20 @@ document.getElementById("register-form").addEventListener("submit", async (e) =>
             "Content-Type": "application/json"
         },
         body: JSON.stringify({
-            name: e.target.elements.name.value,
-            lastname: e.target.elements.lastname.value,
-            email: e.target.elements.email.value,
-            birthdate: e.target.elements.birthdate.value,
+            Nombre: e.target.elements.name.value,
+            Apellido: e.target.elements.lastname.value,
+            Correo: e.target.elements.email.value,
+            FechaNacimiento: e.target.elements.birthdate.value,
             CodigoPostal: e.target.elements.CodigoPostal.value,
-            phone: e.target.elements.phone.value,
-            role: e.target.elements.role.value,
-            password: e.target.elements.password.value,
+            Telefono: e.target.elements.phone.value,
+            idTipo_Usuario: e.target.elements.role.value,
+            Contrasena: e.target.elements.password.value,
         })
     });
-    if(!res.ok) return mensajeError.classList.toggle("escondido", false);
-    const resJson = await res.json();
-    // Si la respuesta de la API es exitosa, redirigimos al usuario a la página de inicio de sesión
-    if(resJson.success){
-        window.location.href = "/";
+    if(!res.ok) {
+        mensajeError.classList.toggle("escondido", false);
     }
+    const resJson = await res.json();
+    // Redirigimos al usuario a la página de inicio de sesión
+    window.location.href = "/";
 })
